@@ -355,6 +355,90 @@ footer{position:relative;z-index:1;margin-top:60px;background:linear-gradient(18
 .footer-bottom{text-align:center;padding:10px 40px 18px;font-family:var(--mono);font-size:.52rem;color:var(--muted);letter-spacing:.07em}
 
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}#cursor-anchor,#cursor-ring{display:none}body{cursor:auto}}
+
+  /* ============================================================
+   19. CRÉDITO NH.dev — FOOTER
+   ============================================================ */
+.nhdev-credit {
+  margin-top: 32px;
+}
+.nhdev-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(34,197,94,.3), transparent);
+  margin-bottom: 20px;
+}
+.nhdev-inner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.nhdev-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid rgba(34,197,94,.2);
+  padding: 4px;
+  background: rgba(34,197,94,.06);
+  filter: drop-shadow(0 0 8px rgba(34,197,94,.2));
+  transition: filter .3s;
+}
+.nhdev-inner:hover .nhdev-logo {
+  filter: drop-shadow(0 0 14px rgba(34,197,94,.5));
+}
+.nhdev-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.nhdev-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: .6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: rgba(255,255,255,.25);
+}
+.nhdev-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: #ffffff;
+  line-height: 1;
+}
+.nhdev-name em {
+  font-style: italic;
+  color: #22c55e;
+}
+.nhdev-link {
+  margin-left: auto;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: .72rem;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: rgba(255,255,255,.3);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 4px;
+  transition: color .2s, border-color .2s, background .2s;
+}
+.nhdev-link:hover {
+  color: #22c55e;
+  border-color: rgba(34,197,94,.25);
+  background: rgba(34,197,94,.05);
+}
+.nhdev-link i { font-size: 10px; }
+  
 </style>
 </head>
 <body>
